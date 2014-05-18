@@ -31,8 +31,8 @@ options:
   label_background_selected_color: "100,100,100,255"
   
   #rom count labels
-  display_rom_count: no
-  rom_count_offset: [180,180]
+  display_rom_count: yes
+  rom_count_offset: [180,20]
   rom_count_font_size: 19
   rom_count_font_color: "255,255,255,128"
   rom_count_background_color: "228,56,65,128"

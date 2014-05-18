@@ -7,7 +7,7 @@ options:
   sort_items_alphanum: No
   sort_items_with_roms_first: Yes
   hide_items_without_roms: No
-  theme_pack: "tron" #name of the folder in /home/pi/pimame/pimame-menu/themes/
+  theme_pack: "default"
 menu_items:
   - label: SNES
     visible: Yes
