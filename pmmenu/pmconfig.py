@@ -7,12 +7,12 @@ class PMCfg:
 	def __init__(self):
 	
 		#load config file, use open() rather than file(), file() is deprecated in python 3.
-		stream = open('/home/pi/pimame/pimame-menu/config.yaml', 'r')
+		stream = open('config.yaml', 'r')
 		config = yaml.safe_load(stream)
 		stream.close()
 		
 		#load theme file - use safe_load to make sure malicious code is not executed if hiding in theme.yaml
-		stream = open('/home/pi/pimame/pimame-menu/themes/' +config['options']['theme_pack'] + "/theme.yaml", 'r')
+		stream = open('themes/' +config['options']['theme_pack'] + "/theme.yaml", 'r')
 		theme = yaml.safe_load(stream)
 		stream.close()
 		
@@ -130,9 +130,9 @@ class PMOptions:
 					return pygame.image.load(alternate_image)
 				except:
 					print 'cant load: ', alternate_image
-					return pygame.image.load('/home/pi/pimame/pimame-menu/assets/images/blank.png')
+					return pygame.image.load('assets/images/blank.png')
 			print 'cant load: ', file_path
-			return pygame.image.load('/home/pi/pimame/pimame-menu/assets/images/blank.png')
+			return pygame.image.load('assets/images/blank.png')
 		
 
 
